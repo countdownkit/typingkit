@@ -125,7 +125,7 @@
     if (finished) return;
     if (input.value.length > expected.length) input.value = input.value.slice(0, expected.length);
     const typedLen = input.value.length;
-    if (!started && typedLen > 0) { started = true; startTime = Date.now(); startTimer(); }
+    if (!started && typedLen > 0) { started = true; if (typeof window.gtag === "function") window.gtag("event", "tool_use", { action: "start" }); startTime = Date.now(); startTimer(); }
     const correct = paint(typedLen);
     const elapsed = started ? Date.now() - startTime : 0;
     setStats(correct, typedLen, elapsed);

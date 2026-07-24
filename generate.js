@@ -66,7 +66,7 @@ function layout({ title, desc, urlPath, h1, body }) {
 </main>
 <footer class="site-foot"><div class="wrap">
   <a href="${BASE}/">Home</a><a href="${BASE}/#tests">Typing tests</a><a href="${BASE}/#timed">Timed tests</a><a href="${BASE}/#practice">Practice</a>
-  <span>· ${SITE} — free online typing speed tests. Measure your words per minute and accuracy, no signup. Part of <a href="https://elevatedprogress.com/">Elevated Progress</a>.</span>
+  <span>· ${SITE} — free online typing speed tests. Measure your words per minute and accuracy, no signup. Part of <a href="https://elevatedprogress.com/">Elevated Progress</a>. · <a href="https://elevatedprogress.com/privacy/">Privacy Policy</a></span>
 </div></footer>
 <script src="${BASE}/data.js" defer></script>
 <script src="${BASE}/typing.js" defer></script>
